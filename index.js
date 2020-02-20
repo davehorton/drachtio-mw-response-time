@@ -1,8 +1,4 @@
-const assert = require('assert');
-
-module.exports = responseTime
-
-const responseTime  = (fn) => (req, res, next) => {
+module.exports = (fn) => (req, res, next) => {
   var startAt = process.hrtime()
 
   res.once('end', () => {
